@@ -5,7 +5,7 @@ import (
 )
 
 func init() {
-	Register(context.Background(), Random, RandomBalance{})
+	Register(context.Background(), RoundRobin, RoundRobinBalance{})
 }
 
 type RoundRobinBalance struct {
